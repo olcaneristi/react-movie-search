@@ -29,7 +29,7 @@ body {
 }
 
 .container {
-  padding: 40px;
+  padding: 40px 20px 40px 20px;
 }
 
 /* Title alani */
@@ -57,6 +57,7 @@ body {
 
 .input {
   width: 250px;
+  height: 40px;
 }
 
 .input::placeholder {
