@@ -1,38 +1,118 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+
+body {
+  background: linear-gradient(
+    to right,
+    #dae2f8,
+    #d6a4a4
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* kapsayici alani */
+
+.app {
+  display: flex;
+}
+
+.container,
+.app {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  padding: 40px;
+}
+
+/* Title alani */
+
+.title {
+  margin: 30px 30px;
+  font-size: 40px;
+  color: rgb(27, 55, 78);
+}
+
+/* search ve button alani */
+
+.form {
+  padding-bottom: 50px;
+}
+
+.input,
+.button {
+  padding: 8px;
+  border: 1px solid rgba(107, 27, 27, 0.8);
+  border-radius: 10px;
+  margin: 5px;
+  font-size: 15px;
+}
+
+.input {
+  width: 250px;
+}
+
+.input::placeholder {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.button {
+  cursor: pointer;
   color: white;
+  background-color: rgba(175, 37, 37, 0.75);
+  width: 80px;
 }
 
-.App-link {
-  color: #61dafb;
+.button:hover {
+  background-color: rgb(156, 45, 45);
+  transition: all 0.5s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* film listeleme alani */
+
+.movie-list {
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  max-width: 600px;
+  box-shadow: 1px 1px 7px rgb(31, 29, 29, 0.5);
+  margin-bottom: 50px;
+}
+
+.movie {
+  padding: 32px 64px;
+}
+
+.movie-cont {
+  padding-top: 20px;
+}
+
+.movie-title {
+  font-size: 25px;
+}
+
+.movie-rating,
+.movie-desc {
+  font-size: 17px;
+  color: rgb(35, 34, 46);
+}
+.movie-desc {
+  font-style: italic;
+}
+
+.movie-img {
+  border-radius: 10px;
+}
+
+.movie-cont,
+.movie-title,
+.movie-rating,
+.movie-desc {
+  padding-bottom: 10px;
 }
