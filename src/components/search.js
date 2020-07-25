@@ -28,7 +28,7 @@ export default function Search() {
             <input
               className="input"
               type="text"
-              placeholder="Enter a movie.. 🧐"
+              placeholder="Enter a movie.."
               value={query}
               onChange={(e) => setQuery(e.target.value)}
             />
