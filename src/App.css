@@ -99,7 +99,8 @@ body {
 }
 
 .movie-rating,
-.movie-desc {
+.movie-desc,
+.movie-release {
   font-size: 17px;
   color: rgb(35, 34, 46);
 }
@@ -114,6 +115,7 @@ body {
 .movie-cont,
 .movie-title,
 .movie-rating,
-.movie-desc {
+.movie-desc,
+.movie-release {
   padding-bottom: 10px;
 }

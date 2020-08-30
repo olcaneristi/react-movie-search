@@ -50,7 +50,12 @@ export default function Search() {
                   />
                   <div className="movie-cont">
                     <h3 className="movie-title">{movie.title}</h3>
-                    <p className="movie-rating">Rating: {movie.vote_average}</p>
+                    <p className="movie-rating">
+                      Rating: <h4>{movie.vote_average}</h4>
+                    </p>
+                    <p className="movie-release">
+                      Release Date: <h4>{movie.release_date}</h4>
+                    </p>
                     <p className="movie-desc">{movie.overview}</p>
                   </div>
                 </div>
