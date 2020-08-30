@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+require("dotenv").config()
 
 export default function Search() {
   const [query, setQuery] = useState("")
@@ -7,7 +8,8 @@ export default function Search() {
   const Search = async (e) => {
     e.preventDefault()
 
-    const url = `https://api.themoviedb.org/3/search/movie?api_key=5dcf7f28a88be0edc01bbbde06f024ab&query=${query}`
+    const API_KEY = process.env.REACT_APP_API_KEY
+    const url = `https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&query=${query}`
 
     try {
       const res = await fetch(url)
